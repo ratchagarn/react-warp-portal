@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 let wrapPortalId = 1;
 
 class WrapPortal extends Component {
   componentDidMount() {
-    const { children, container } = this.props;
+    const { container } = this.props;
 
     const containerNode = document.createElement('div');
     containerNode.id = `wrap-portal-${wrapPortalId}`;
